@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ShoeStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="img" src="images/sneakas.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="index.html#products">Sản Phẩm</a></li>
+                    <li><a href="index.html#about">Về Chúng Tôi</a></li>
+                    <li><a href="index.html#testimonies">Chứng nhận Khách Hàng</a></li>
+                    <li><a href="index.html#contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="checkout-section">
+        <div class="checkout-container">
+            <h2>Thông Tin Thanh Toán</h2>
+            <form id="forma" action="#" method="post" class="checkout-form">
+                <h3>Thông Tin Khách Hàng</h3>
+                <div class="form-group">
+                    <label for="first-name">Tên</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Họ</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <h3>Địa Chỉ Giao Hàng</h3>
+                <div class="form-group">
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Thành phố</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="state">Tỉnh/Bang</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="zip">Mã bưu điện</label>
+                    <input type="text" id="zip" name="zip" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Quốc gia</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+
+                <h3>Phương Thức Thanh Toán</h3>
+                <div class="form-group">
+                    <label for="payment-method">Chọn phương thức thanh toán</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="credit-card">Thẻ tín dụng</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bank-transfer">Chuyển khoản ngân hàng</option>
+                        <option value="cash-on-delivery">Thanh toán khi nhận hàng</option>
+                    </select>
+                </div>
+
+                <a id="thanhtoan" href="thanhtoan.html" type="submit" class="btn">Hoàn Tất Đơn Hàng</a>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Về Chúng Tôi</h3>
+                <p>Chúng tôi cung cấp các sản phẩm giày tốt nhất.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Dịch Vụ Khách Hàng</h3>
+                <ul>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#">Bảo Hành</a></li>
+                    <li><a href="#">Hoàn Trả</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Theo Dõi Chúng Tôi</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="logos/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="logos/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="logos/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PS42473. All rights reserved. Địa chỉ: 123 Đường ABC, Quận 1, TP. Hồ Chí Minh. Hotline: 0900 123 456.</p>
+        </div>
+    </footer>
+</body>
+<script src="checkout.js"></script>
+
+</html>
