@@ -1,31 +1,151 @@
 let productList = [
-  { name: "Adidas 1", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/adidas1.jpg", price: 150000 },
-  { name: "Adidas 2", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/adidas2.jpg", price: 250000 },
-  { name: "Adidas 3", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/adidas3.jpg", price: 350000 },
-  { name: "Adidas 4", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/adidas4.jpg", price: 450000 },
-  { name: "Nike 1", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nike1.jpg", price: 550000 },
-  { name: "Nike 2", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nike2.jpg", price: 650000 },
-  { name: "Nike 3", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nike3.jpg", price: 750000 },
-  { name: "Nike 4", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nike4.jpg", price: 850000 },
-  { name: "Adidas 100", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/adidas1.jpg", price: 950000 },
-  { name: "Nike 5", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nike5.jpg", price: 430000 },
-  { name: "Nike 6", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nike6.jpg", price: 240000 },
-  { name: "Puma 1", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/puma1.jpg", price: 180000 },
-  { name: "Puma 2", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/puma2.jpg", price: 310000 },
-  { name: "Puma 3", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/puma3.jpg", price: 770000 },
-  { name: "Balance 1", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nb1.jpg", price: 190000 },
-  { name: "Balance 2", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nb2.jpg", price: 200000 }
+  {
+    name: "Adidas Superstar",
+    desc: "Giày cổ điển với thiết kế đặc trưng, phần mũi giày có hình vỏ sò nổi bật và chất liệu da cao cấp.",
+    images: [
+      "images/superstar1.avif",
+      "images/superstar2.avif",
+      "images/superstar3.avif"
+    ],
+    price: 2000000
+  },
+  {
+    name: "Yeezy 350",
+    desc: "Giày thể thao phong cách và thoải mái, nổi tiếng với chất liệu Primeknit và đế Boost siêu êm.",
+    images: [
+      "images/yz1.avif",
+      "images/yz2.avif",
+      "images/yz3.avif"
+    ],
+    price: 5000000
+  },
+  {
+    name: "Adidas Gazelle",
+    desc: "Giày thể thao cổ điển với chất liệu da lộn mềm mại và đế cao su chắc chắn, mang lại sự êm ái và phong cách.",
+    images: [
+      "images/gazelle1.avif",
+      "images/gazelle2.avif",
+      "images/gazelle3.avif"],
+    price: 1800000
+  },
+  {
+    name: "Cloudfoam",
+    desc: "Giày chạy bộ nhẹ nhàng và thoải mái với công nghệ Cloudfoam đem lại cảm giác êm ái trong mỗi bước.",
+    images: [
+      "images/cloudfoam1.avif",
+      "images/cloudfoam2.avif",
+      "images/cloudfoam3.avif"],
+    price: 1200000
+  },
+  {
+    name: "Ultra Boost 1.0",
+    desc: "Giày chạy bộ với công nghệ đệm Boost tiên tiến, cung cấp sự đàn hồi và thoải mái tối đa khi chạy.",
+    images: [
+      "images/ultraboost1.avif",
+      "images/ultraboost2.avif",
+      "images/ultraboost3.avif"],
+    price: 3500000
+  },
+  {
+    name: "Adidas Forum 84",
+    desc: "Giày thể thao retro với phong cách độc đáo, phần cổ giày cao và đế ngoài bền bỉ.",
+    images: [
+      "images/forum1.avif",
+      "images/forum2.avif",
+      "images/forum3.avif"],
+    price: 2200000
+  },
+  {
+    name: "Adidas Rivalry",
+    desc: "Giày bóng rổ với thiết kế mạnh mẽ, phần đế ngoài chắc chắn và hỗ trợ tốt cho các động tác nhanh.",
+    images: [
+      "images/rivalry1.avif",
+      "images/rivalry2.avif",
+      "images/rivalry3.avif"],
+    price: 2300000
+  },
+  {
+    name: "Nike Air Force 1",
+    desc: "Giày thể thao kinh điển với thiết kế bền bỉ, đế Air giúp giảm chấn và đem lại sự thoải mái trong suốt ngày dài.",
+    images: [
+      "images/af1.webp",
+      "images/af2.webp",
+      "images/af3.webp"],
+    price: 2500000
+  },
+  {
+    name: "Nike Air Max 270",
+    desc: "Giày thể thao với đệm khí lớn ở gót chân, mang lại sự thoải mái và phong cách hiện đại.",
+    images: [
+      "images/max1.webp",
+      "images/max2.webp",
+      "images/max3.webp"],
+    price: 3000000
+  },
+  {
+    name: "Nike Dunk Low",
+    desc: "Giày thể thao phong cách đường phố, với thiết kế đế phẳng và nhiều màu sắc khác nhau.",
+    images: [
+      "images/dunklow1.webp",
+      "images/dunklow2.webp",
+      "images/dunklow3.webp"],
+    price: 2700000
+  },
+  {
+    name: "Nike Blazer Mid '77",
+    desc: "Giày thể thao cổ cao với thiết kế retro, phần da bền và đế cao su giúp bám đường tốt.",
+    images: [
+      "images/blazer1.webp",
+      "images/blazer2.webp",
+      "images/blazer3.webp"],
+    price: 2400000
+  },
+  {
+    name: "Puma Suede Classic",
+    desc: "Giày thể thao với chất liệu da lộn, đế ngoài cao su và phong cách cổ điển.",
+    images: [
+      "images/suede1.avif",
+      "images/suede2.avif",
+      "images/suede3.avif"],
+    price: 1600000
+  },
+  {
+    name: "Puma RS-X3",
+    desc: "Giày thể thao với thiết kế đậm chất công nghệ, phần đế dày và các chi tiết nhiều màu sắc.",
+    images: [
+      "images/rsx1.avif",
+      "images/rsx2.avif",
+      "images/rsx3.avif"],
+    price: 2800000
+  },
+  {
+    name: "Puma Cali",
+    desc: "Giày thể thao phong cách California, với phần đế thấp và thiết kế đơn giản nhưng nổi bật.",
+    images: [
+      "images/cali1.avif",
+      "images/cali2.avif",
+      "images/cali3.avif"],
+    price: 1900000
+  },
+  {
+    name: "New Balance 574",
+    desc: "Giày thể thao với thiết kế đa năng, đế EVA và công nghệ ENCAP cho sự thoải mái và hỗ trợ tốt.",
+    images: [
+      "images/nb1.webp",
+      "images/nb2.webp",
+      "images/nb3.webp"],
+    price: 2100000
+  },
+  {
+    name: "Converse Chuck Taylor All Star",
+    desc: "Giày thể thao kinh điển với thiết kế bất hủ, phần vải bền và đế cao su chắc chắn.",
+    images: [
+      "images/converse1.webp",
+      "images/converse2.webp",
+      "images/converse3.webp"],
+    price: 1400000
+  }
 ];
-
-let hotProductList = [
-  { name: "Adidas 1", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/adidas1.jpg", price: 150000 },
-  { name: "Nike 1", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nike1.jpg", price: 550000 },
-  { name: "Puma 1", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/puma1.jpg", price: 180000 },
-  { name: "Balance 1", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nb1.jpg", price: 190000 },
-  { name: "Adidas 100", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/adidas1.jpg", price: 950000 },
-  { name: "Nike 5", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nike5.jpg", price: 430000 },
-  { name: "Nike 6", desc: "Đây là một đôi giày ối giồi ôi,bạn không nên mua, tìm đôi khác đi nhé", image: "images/nike6.jpg", price: 240000 },
-]
 
 document.addEventListener('DOMContentLoaded', () => {
   if (!document.cookie.includes("cart")) {
@@ -35,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   productList.forEach(p => add_item_list(p));
-  hotProductList.forEach(p => addHotItemList(p));
+  productList.slice(0,7).forEach(p => addHotItemList(p));
 
 
 });
@@ -48,8 +168,8 @@ function addHotItemList(item) {
 
   // Create an img element
   const img = document.createElement('img');
-  img.src = item.image;
-  img.alt = item.image;
+  img.src = item.images[0];
+  img.alt = item.images[0];
 
   // Create an h3 element
   const h3 = document.createElement('h3');
@@ -134,7 +254,7 @@ function add_item_list(item) {
 
   // Create and append the image element
   var img = document.createElement('img');
-  img.src = item.image;
+  img.src = item.images[0];
   img.alt = 'Image ';
   productItem.appendChild(img);
 
@@ -212,14 +332,13 @@ function add_item_list(item) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const images = [
-    'images/adidas1.jpg',
-    'images/nike1.jpg',
-    'images/nike4.jpg',
-    'images/nike5.jpg',
-    'images/nike6.jpg',
-    'images/nb1.jpg',
-    'images/puma1.jpg',
-    'images/puma3.jpg'
+    'images/superstar1.avif',
+    'images/yz1.avif',
+    'images/af1.webp',
+    'images/blazer1.webp',
+    'images/nb1.webp',
+    'images/rsx1.avif',
+    'images/converse1.webp'
   ];
 
   let currentIndex = 0;

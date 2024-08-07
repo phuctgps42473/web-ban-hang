@@ -167,9 +167,14 @@ nav span img {
   cursor: pointer;
 }
 
+#alo {
+  width: 100%;
+  background-color: #eecfcc;
+}
+
 /* HOT PRODUCTS SECTION */
 #hot-products {
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
   padding: 60px 20px;
   text-align: center;
@@ -219,6 +224,11 @@ nav span img {
 .hot-product-item p {
   font-size: 16px;
   margin: 10px 0;
+}
+
+.hot-product-item .gia {
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .hot-product-item button {
@@ -590,11 +600,12 @@ footer {
 }
 
 #slider-image {
-  object-fit: cover;
+  background-color: #e8e8e8;
+  object-fit: contain;
+  scale: 1.5;
   width: 100%;
   height: 100%;
   opacity: 0.9;
-  filter: blur(0.5px);
 }
 
 .slider-container>button {
